@@ -1,5 +1,7 @@
 import Array "mo:base/Array";
 import Nat "mo:base/Nat";
+import Char "mo:base/Char";
+
 actor {
 
     // Challenge 1
@@ -14,7 +16,7 @@ actor {
 
     // Challenge 3
     public func days_to_seconds(n : Nat) : async Nat {
-        return(n * 24 * 60 * 60);
+        return(n * 24 * 60 * 60); // Each day has 24 hours; each hour has 60 minutes; each minute has 60 seconds.
     };
 
     // Challenge 4
@@ -23,22 +25,22 @@ actor {
     var counter : Nat = 0;
 
     public func increment_counter(n : Nat) : async Nat {
-        counter := counter + n;
+        counter += n;
         return(counter);
     };
 
     public func clear_counter() : async () {
         counter := 0;
-        return;
+        return counter;
     };
 
     // Challenge 5
 
-    public func dividetext(n : Nat, m : Nat) : async Text {
+    public func divide(n : Nat, m : Nat) : async Bool {
         if(n % m == 0) {
-            return("yes");
+            return true;
         } else {
-            return("no");
+            return false;
         }
 
     };
@@ -72,4 +74,5 @@ actor {
         };
         return (n);
     };
+
 };
