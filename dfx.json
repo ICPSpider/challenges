@@ -11,6 +11,22 @@
       "day_3": {
         "type": "motoko",
         "main": "day_3.mo"
+      },
+      "day_4(1)": {
+        "type": "motoko",
+        "main": "day_4(1).mo"
+      },
+      "Custom": {
+        "type": "motoko",
+        "main": "Custom.mo"
+      },
+      "main": {
+        "type": "motoko",
+        "main": "main.mo"
+      },
+      "animal": {
+        "type": "motoko",
+        "main": "animal.mo"
       }
     },
     "defaults": {
