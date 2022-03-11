@@ -72,8 +72,8 @@ actor {
 
     // Challenge 6
 
-    func push_animal (loki : Animal) : async () {
-        animals:= List.push(loki, animals);
+    func push_animal (bear : Animal) : async () {
+        animals:= List.push<Animal>(bear, animals);
     };
     public func get_animals () : async [Animal] {
         return List.toArray(animals);

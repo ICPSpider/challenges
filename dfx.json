@@ -27,6 +27,10 @@
       "animal": {
         "type": "motoko",
         "main": "animal.mo"
+      },
+      "day_5": {
+        "type": "motoko",
+        "main": "day_5.mo"
       }
     },
     "defaults": {
